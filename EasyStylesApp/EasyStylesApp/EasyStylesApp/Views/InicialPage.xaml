@@ -2,15 +2,46 @@
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                   xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+                  xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
                   prism:ViewModelLocator.AutowireViewModel="True"
                   x:Class="EasyStylesApp.Views.InicialPage">
 
     <MasterDetailPage.Master>
-        <ContentPage Title="Menu App">
+        <ContentPage Title="Menu">
 
-            <StackLayout Padding="0,20,0,0">
-                <Button Text="Inicial" TextColor="White" 
-                        BackgroundColor="Black" Command="{Binding NavigateCommand}" />
+            <StackLayout Orientation="Vertical">
+                
+                    <Grid BackgroundColor="Teal" HeightRequest="150">
+                        
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <StackLayout Grid.Column="0" Grid.Row="0" VerticalOptions="Center" 
+                                     Padding="10,0,0,0" HorizontalOptions="Center">
+                            <controls:CircleImage Source="icon" HeightRequest="100"/>
+                        </StackLayout>
+
+                        <StackLayout Grid.Column="1" Grid.Row="0" Orientation="Vertical"
+                                     VerticalOptions="Center" Padding="5,0,0,0" HorizontalOptions="Start">
+                            <Label Text="Nome Usuario" TextColor="White" FontAttributes="Bold" FontSize="20"/>
+                            <Label Text="Ver Perfil" TextColor="White"/>
+                        </StackLayout>
+
+                        <StackLayout Grid.Column="2" Grid.Row="0" VerticalOptions="Center" 
+                                     Padding="10,0" HorizontalOptions="End">
+                            <Label Text="Teste" TextColor="White" />
+                        </StackLayout>
+                    </Grid>
+                
+                <!--<ListView></ListView>-->
+                
             </StackLayout>
             
         </ContentPage>
