@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<prism:PrismApplication xmlns="http://xamarin.com/schemas/2014/forms"
+                        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                        xmlns:custom="clr-namespace:EasyStylesApp.Customs;assembly=EasyStylesApp"
+                        xmlns:prism="clr-namespace:Prism.Unity;assembly=Prism.Unity.Forms"
+                        x:Class="EasyStylesApp.App">
+
+  <prism:PrismApplication.Resources>
+    <ResourceDictionary>
+
+      <Style TargetType="custom:CardView" x:Key="styleCardView">
+        <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+        <Setter Property="VerticalOptions" Value="Start" />
+        <Setter Property="HasShadow" Value="True"/>
+        <Setter Property="Padding" Value="5"/>
+        <Setter Property="Margin" Value="5,0"/>
+      </Style>
+
+      <Style TargetType="ContentPage" x:Key="styleContentPage">
+        <Setter Property="BackgroundColor" Value="Gray" />
+      </Style>
+
+    </ResourceDictionary>
+  </prism:PrismApplication.Resources>
+
+</prism:PrismApplication>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:custom="clr-namespace:EasyStylesApp.Customs;assembly=EasyStylesApp"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="EasyStylesApp.Views.MainPage"
+             Title="Inicial" Style="{StaticResource styleContentPage}">
+
+    <StackLayout Orientation="Vertical">
+        
+        <custom:CardView Style="{StaticResource styleCardView}">
+            <Label Text="Teste" />
+        </custom:CardView>
+        <custom:CardView Style="{StaticResource styleCardView}">
+            <Label Text="Teste" />
+        </custom:CardView>
+        <custom:CardView Style="{StaticResource styleCardView}">
+            <Label Text="Teste" />
+        </custom:CardView>
+        
+    </StackLayout>
+    
+
+
+</ContentPage>
