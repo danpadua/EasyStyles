@@ -22,6 +22,7 @@ namespace EasyStylesApp
             Container.RegisterTypeForNavigation<InicialPage>();
             Container.RegisterTypeForNavigation<NavegacaoPage>();
             Container.RegisterTypeForNavigation<ListViewPage>();
+            Container.RegisterTypeForNavigation<MenuPage>();
         }
     }
 }

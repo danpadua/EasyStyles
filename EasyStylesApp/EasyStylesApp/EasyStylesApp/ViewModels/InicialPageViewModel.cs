@@ -2,8 +2,8 @@
 using Prism.Mvvm;
 using Prism.Navigation;
 using System;
-using System.Collections.Generic;
-using System.Linq;
+using EasyStylesApp.Models;
+using EasyStylesApp.Utils;
 
 namespace EasyStylesApp.ViewModels
 {
